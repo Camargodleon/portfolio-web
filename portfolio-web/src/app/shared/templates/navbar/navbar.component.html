@@ -1,0 +1,6 @@
+<nav class="navbar sticky-top navbar-light bg-light" *ngIf="visible" (scroll)="onScroll($event)">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Fixed top</a>
+    </div>
+</nav>
+<ng-content></ng-content>

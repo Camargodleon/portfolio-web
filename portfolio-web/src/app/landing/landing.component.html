@@ -1,0 +1,20 @@
+<div class="main-banner">
+    <div class="main-heading">
+        <span class="heading">
+            {{heading}}
+        </span>
+        <span class="sub-heading">
+            <em>{{subHeading}}</em>
+        </span>
+
+        <div class="socials">
+        </div>
+        <div>        
+            <button [routerLink]="['/servicos']" id="botaoFreela" pButton pRipple type="button" label="{{btnFreela}}" class="p-button-outlined p-button-help"></button>
+            <button [routerLink]="['/tecnologia']" id="botaoAnalista" pButton pRipple type="button" label="{{btnAnalist}}" class="p-button-outlined p-button-help"></button>
+            <i style="float: right; padding-right: 22%; font-size: 28rem; margin-top: -11%;" class="fa fa-code" aria-hidden="true"></i>
+        </div>
+        
+    </div>
+    <app-sidebar></app-sidebar>
+</div>  

@@ -1,0 +1,211 @@
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(../../assets/fonts/Montserrat-Bold.ttf);
+  }
+
+@font-face {
+    font-family: Montserrat-Italic;
+    src: url(../../assets/fonts/Montserrat-Italic.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(../../assets/fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(../../assets/fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../../assets/fonts/Montserrat-Regular.ttf);
+}
+
+.main-banner {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: .88;
+    overflow: hidden;
+}
+
+p {
+    font-family: Montserrat-Regular;
+    text-align: justify;
+}
+
+h2 {
+    font-family: Montserrat-Regular;
+    text-align: justify;
+}
+
+
+.saiba-mais {
+    font-family: Montserrat-Medium;
+    font-style: normal;
+    color: rgb(160, 76, 160);
+    text-decoration: none;
+
+    
+}
+
+.saiba-mais:hover{
+    cursor: pointer;
+}
+
+.p-button-help {
+    animation: fadeInAnimation ease 3s, pulse 2s infinite;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(179, 65, 179, 0.9);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(179, 65, 179, 0.9);
+      box-shadow: 0 0 0 0 rgba(179, 65, 179, 0.9);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+        box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+        box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+}
+
+a.lightbox img {
+    height: 150px;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+    margin: 94px 20px 20px 20px;
+    }
+    
+    /* Styles the lightbox, removes it from sight and adds the fade-in transition */
+    
+    .lightbox-target {
+    position: fixed;
+    top: -100%;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    overflow: hidden;
+     
+    }
+    
+    /* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+    
+    .lightbox-target img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    max-height: 0%;
+    max-width: 0%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+    box-sizing: border-box;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+      
+    }
+    
+    /* Styles the close link, adds the slide down transition */
+    
+    a.lightbox-close {
+    display: block;
+    width:50px;
+    height:50px;
+    box-sizing: border-box;
+    background: white;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    top: -80px;
+    right: 0;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    }
+    
+    /* Provides part of the "X" to eliminate an image from the close link */
+    
+    a.lightbox-close:before {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 1px;
+    background: black;
+    position: absolute;
+    left: 26px;
+    top:10px;
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    transform:rotate(45deg);
+    }
+    
+    /* Provides part of the "X" to eliminate an image from the close link */
+    
+    a.lightbox-close:after {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 1px;
+    background: black;
+    position: absolute;
+    left: 26px;
+    top:10px;
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+    }
+    
+    /* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+    
+    .lightbox-target:target {
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+      overflow:scroll;
+    }
+    
+    .lightbox-target:target img {
+    max-height: 100%;
+    max-width: 100%;
+    }
+    
+    .lightbox-target:target a.lightbox-close {
+    top: 0;
+    }

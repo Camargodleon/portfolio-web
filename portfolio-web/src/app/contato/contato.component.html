@@ -1,0 +1,103 @@
+<div class="main-banner">
+    <div class="box-body">
+        
+        <form #form="ngForm">
+            <h1>Me envie uma mensagem</h1>
+            <p-card>
+            <div class="row">
+                
+                <div class="col-md-3">
+                <div class="form-group">
+                    <span class="p-float-label">
+                        <input required name="nome" #nome="ngModel" ngModel type="text" pInputText [(ngModel)]="dadosEmail.nome"> 
+                        <label for="float-input">Nome</label>
+                    </span>
+                    <small *ngIf="nome.errors && (nome.dirty || nome.touched)" class="text-danger">
+                        <div  class="alerts">
+                            <div [hidden]="!nome.errors.required">
+                                Nome é obrigatório.
+                            </div>
+                        </div>
+                    </small>
+                </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <span class="p-float-label">
+                            <input style="width: 119%;" required name="assunto" #assunto="ngModel" ngModel type="text" pInputText [(ngModel)]="dadosEmail.assunto"> 
+                            <label for="float-input">Assunto</label>
+                        </span>
+                        <small *ngIf="assunto.errors && (assunto.dirty || assunto.touched)" class="text-danger">
+                            <div  class="alerts">
+                                <div [hidden]="!assunto.errors.required">
+                                    Assunto é obrigatório.
+                                </div>
+                            </div>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 2%;">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <span class="p-float-label">
+                            <input style="width: 109%;" required name="email" #email="ngModel" ngModel type="text" pInputText [(ngModel)]="dadosEmail.email"> 
+                            <label for="float-input">E-mail</label>
+                        </span>
+                        <small *ngIf="email.errors && (email.dirty || email.touched)" class="text-danger">
+                            <div  class="alerts">
+                                <div [hidden]="!email.errors.required">
+                                    E-mail é obrigatório.
+                                </div>
+                            </div>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 2%;">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <span class="p-float-label">
+                            <textarea required [autoResize]="resizeTextArea" name="mensagem" style="width: 109%;" ngModel #mensagem="ngModel" pInputTextarea [(ngModel)]="dadosEmail.mensagem"></textarea>
+                            <label for="float-input">Mensagem</label>
+                        </span>
+                        <small *ngIf="mensagem.errors && (mensagem.dirty || mensagem.touched)" class="text-danger">
+                            <div  class="alerts">
+                                <div [hidden]="!mensagem.errors.required">
+                                    Mensagem é obrigatória.
+                                </div>
+                            </div>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-lg-2"></div>
+                <div style="margin-right: 5%;" class="col col-lg-2"></div>
+                <div style="float: right;" class="col col-md-2">
+                    <button style="width: 28vh;" pButton pRipple type="button" label="Enviar" (click)="enviarMensagem()" class="p-button-rounded p-button-help"></button>
+                </div>
+            </div>
+            </p-card>
+        </form>
+            
+        <p-card>
+            <dl class="row">
+                <dt style="font-family: Montserrat-Light" class="col-sm-3"><i class="fa fa-user" aria-hidden="true"></i> Nome</dt>
+                <dd style="font-family: Montserrat-Light" class="col-sm-9">Leonardo Santana A. Camargo</dd>
+              
+                <dt style="font-family: Montserrat-Light" class="col-sm-3"><i class="fa fa-phone-square" aria-hidden="true"></i> Telefone para contato</dt>
+                <dd style="font-family: Montserrat-Light" class="col-sm-9">
+                  +55 62 98339-0113
+                </dd>
+              
+                <dt style="font-family: Montserrat-Light" class="col-sm-3"><i class="fa fa-map-marker" aria-hidden="true"></i> Localização</dt>
+                <dd style="font-family: Montserrat-Light" class="col-sm-9">Goiânia - GO</dd>
+              
+              </dl>
+        </p-card>
+    </div>
+    <i style="float: right; font-size: 22rem; margin-top: -25%; margin-right: 25%;" class="fa fa-phone" aria-hidden="true"></i>
+    
+    <app-sidebar></app-sidebar>
+</div>  
