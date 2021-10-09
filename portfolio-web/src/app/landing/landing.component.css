@@ -1,7 +1,7 @@
 @font-face {
     font-family: Montserrat-Bold;
     src: url(../../assets/fonts/Montserrat-Bold.ttf);
-  }
+}
 
 @font-face {
     font-family: Montserrat-Italic;
@@ -31,13 +31,13 @@
     overflow: hidden;
 }
 
-.main-heading{
+.main-heading {
     position: inherit;
     width: 100%;
     align-content: center;
 }
 
-.heading {    
+.heading {
     padding-top: 5%;
     display: table;
     margin: auto auto auto 5%;
@@ -48,7 +48,7 @@
     color: white;
 }
 
-.sub-heading {    
+.sub-heading {
     padding-top: 5%;
     display: table;
     margin: auto auto auto 5%;
@@ -58,30 +58,29 @@
     color: white;
     width: 38%;
     opacity: 0.8;
-    
 }
 
-.images > img {
+.images>img {
     display: table;
     margin: auto 5% auto auto;
 }
 
-.socials{
+.socials {
     padding-top: 5%;
     display: table;
     margin: auto auto auto 5%;
-    
 }
 
-#botaoFreela{
-    position: inherit;    
-    width: 30vh;
+#botaoFreela {
+    position: inherit;
+    width: 40vh;
     margin: auto auto auto 5%;
     font-family: Montserrat-Light;
 }
-#botaoAnalista{
-    position: inherit;    
-    width: 30vh;
+
+#botaoAnalista {
+    position: inherit;
+    width: 40vh;
     margin: auto auto auto 5%;
     font-family: Montserrat-Light;
 }
