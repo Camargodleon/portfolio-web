@@ -2,18 +2,18 @@
     <div style="padding-left: 7%; padding-top: 7%;" class="row">
         <div class="col col-md-4">
             <p-card header="Front-end" [style]="{width: '360px'}" styleClass="p-card-shadow">
-                <img style="height: auto; width: 320px; padding-bottom: 10%;" alt="Card" src="../../assets/images/front-end.jpg">
+                <img style="height: auto; width: 320px; padding-bottom: 10%;" alt="Card" src="assets/images/front-end.jpg">
                 <p>Tecnologias que constroem interfaces de usuário intuitivas, simples e agradáveis. Como desenvolvedor fullstack, disponho de um arsenal que facilita o desenvolvimento destas interfaces de uma maneira rápida, compreensível e acessível.</p>
                 <ng-template pTemplate="footer">
-                    <a (click)="displayFrontDialog=true" class="saiba-mais">Saiba mais <i class="fa fa-arrow-right"></i></a>                    
+                    <a (click)="displayFrontDialog=true" class="saiba-mais">Saiba mais <i class="fa fa-arrow-right"></i></a>
                 </ng-template>
             </p-card>
         </div>
 
         <div class="col col-md-3">
             <p-card header="Back-end" [style]="{width: '360px'}" styleClass="p-card-shadow">
-                <img style="height: auto; width: 320px; padding-bottom: 3%;" alt="Card" src="../../assets/images/backend.png">
-                <p>Como desenvolvedor backend estou preparado para entregar serviços eficientes, leves e de fácil manutenção. Fazendo uso de tecnologias apropriadas para cada cenário, meu estilo é orientado por <strong>organização</strong>, <strong>solidez</strong> e <strong>adaptabilidade</strong></p>
+                <img style="height: auto; width: 320px; padding-bottom: 3%;" alt="Card" src="assets/images/backend.png">
+                <p>Como desenvolvedor backend estou preparado para entregar serviços eficientes, leves e de fácil manutenção. Fazendo uso de tecnologias apropriadas para cada cenário, meu estilo é orientado por <strong>organização</strong>, <strong>solidez</strong>                    e <strong>adaptabilidade</strong></p>
                 <ng-template pTemplate="footer">
                     <a (click)="displayBackDialog=true" class="saiba-mais">Saiba mais <i class="fa fa-arrow-right"></i></a>
                 </ng-template>
@@ -24,7 +24,7 @@
         <div class="col col-md-2"></div>
         <div class="col col-md-2">
             <p-card header="DevOps e Outros Recursos" [style]="{width: '360px'}" styleClass="p-card-shadow">
-                <img style="height: auto; width: 320px; padding-bottom: 3%;" alt="Card" src="../../assets/images/other.jpg">
+                <img style="height: auto; width: 320px; padding-bottom: 3%;" alt="Card" src="assets/images/other.jpg">
                 <p>Estou sempre preparado para atacar todas as frontes necessárias, buscando por tecnologias que permitam aos artifatos produzidos serem entregues de forma leve, confiável e dinâmica.</p>
                 <ng-template pTemplate="footer">
                     <a (click)="displayOtherDialog=true" class="saiba-mais">Saiba mais <i class="fa fa-arrow-right"></i></a>
@@ -38,24 +38,21 @@
 
 
     <p-dialog [(visible)]="displayFrontDialog" [style]="{width: '100vw'}" [baseZIndex]="10000">
-        
+
         <div class="row">
-            <img style="height: 150px; width: auto;" src="../../assets/images/Angular_full_color_logo.svg.png">
-            <img style="height: 150px; width: auto;" src="../../assets/images/1280px-React-icon.svg.png">
+            <img style="height: 150px; width: auto;" src="assets/images/Angular_full_color_logo.svg.png">
+            <img style="height: 150px; width: auto;" src="assets/images/1280px-React-icon.svg.png">
         </div>
         <p-tabView>
             <p-tabPanel header="Angular">
                 <p>
-                <strong>Nível Júnior</strong> <br>
-                Dois anos de experiência como desenvolvedor fullstack fazendo uso de Angular e diversas bibliotecas de componentes e temas.
-                Confortável o suficiente para oferecer manutenção, manipular, criar e refatorar projetos de grande porte.
+                    <strong>Nível Júnior</strong> <br> Dois anos de experiência como desenvolvedor fullstack fazendo uso de Angular e diversas bibliotecas de componentes e temas. Confortável o suficiente para oferecer manutenção, manipular, criar e refatorar
+                    projetos de grande porte.
                 </p>
             </p-tabPanel>
             <p-tabPanel header="React">
                 <p>
-                    <strong>Nível Júnior</strong> <br>
-                    Alguns meses de experiência como desenvolvedor fullstack fazendo uso de React.
-                    Confortável o suficiente para oferecer manutenção e manipular projetos de pequeno e médio porte.
+                    <strong>Nível Júnior</strong> <br> Alguns meses de experiência como desenvolvedor fullstack fazendo uso de React. Confortável o suficiente para oferecer manutenção e manipular projetos de pequeno e médio porte.
                 </p>
             </p-tabPanel>
         </p-tabView>
@@ -63,33 +60,31 @@
             <p-button icon="pi pi-check" (click)="displayFrontDialog=false" label="Ok" styleClass="p-button-text"></p-button>
         </ng-template>
     </p-dialog>
-    
+
     <p-dialog [(visible)]="displayBackDialog" [style]="{width: '100vw'}" [baseZIndex]="10000">
-        
+
         <div class="row">
-            <img style="height: 150px; width: auto;" src="../../assets/images/java-logo.png">
-            <img style="height: 150px; width: auto;" src="../../assets/images/Spring_Framework_Logo_2018.svg.png">
-            <img style="height: 150px; width: auto;" src="../../assets/images/c-sharp-logo.png">
+            <img style="height: 150px; width: auto;" src="assets/images/java-logo.png">
+            <img style="height: 150px; width: auto;" src="assets/images/Spring_Framework_Logo_2018.svg.png">
+            <img style="height: 150px; width: auto;" src="assets/images/c-sharp-logo.png">
         </div>
         <p-tabView>
             <p-tabPanel header="Java Core">
                 <p>
-                <strong>Nível Júnior</strong><br>
-                    Três anos de experiência com o Core de Java me deixam confortável para executar qualquer tarefa em projetos de grande porte. Tenho fluência nas principais APIs e libraries que fazem de Java uma das linguagens mais poderosas e presentes neste meio.
-                    Também posso afirmar meu conforto nas bases de lógica da programação orientada a objetos, afirmando com tranquilidade que seguiria boas práticas de programação no tratamento de qualquer cenário apresentado.
+                    <strong>Nível Júnior</strong><br> Três anos de experiência com o Core de Java me deixam confortável para executar qualquer tarefa em projetos de grande porte. Tenho fluência nas principais APIs e libraries que fazem de Java uma das
+                    linguagens mais poderosas e presentes neste meio. Também posso afirmar meu conforto nas bases de lógica da programação orientada a objetos, afirmando com tranquilidade que seguiria boas práticas de programação no tratamento de qualquer
+                    cenário apresentado.
                 </p>
             </p-tabPanel>
             <p-tabPanel header="Spring Framework">
                 <p>
-                    <strong>Nível Júnior</strong><br>
-                    Dois anos de experiência trabalhando com o framework que coloca Java no mundo das REST APIs. Tenho conforto executando qualquer tarefa em projetos de grande porte deste framework.
-                    Além do Core do Spring Framework, minha fluência se extende para o Spring Web, Spring Data e Spring Security.
+                    <strong>Nível Júnior</strong><br> Dois anos de experiência trabalhando com o framework que coloca Java no mundo das REST APIs. Tenho conforto executando qualquer tarefa em projetos de grande porte deste framework. Além do Core do Spring
+                    Framework, minha fluência se extende para o Spring Web, Spring Data e Spring Security.
                 </p>
             </p-tabPanel>
             <p-tabPanel header="C#">
                 <p>
-                    <strong>Nível Júnior</strong><br>
-                    Alguns meses de experiência com C# e .NET me dão conforto para oferecer manutenção e manipular projetos de pequeno e médio porte com esta tecnologia.
+                    <strong>Nível Júnior</strong><br> Alguns meses de experiência com C# e .NET me dão conforto para oferecer manutenção e manipular projetos de pequeno e médio porte com esta tecnologia.
                 </p>
             </p-tabPanel>
         </p-tabView>
@@ -97,31 +92,28 @@
             <p-button icon="pi pi-check" (click)="displayBackDialog=false" label="Ok" styleClass="p-button-text"></p-button>
         </ng-template>
     </p-dialog>
-    
+
     <p-dialog [(visible)]="displayOtherDialog" [style]="{width: '100vw'}" [baseZIndex]="10000">
-        
+
         <div class="row">
-            <img style="height: 150px; width: auto;" src="../../assets/images/docker.png">
-            <img style="height: 150px; width: auto;" src="../../assets/images/kubernetes-logo.png">
-            <img style="height: 150px; width: auto;" src="../../assets/images/Jenkins_logo.svg.png">
+            <img style="height: 150px; width: auto;" src="assets/images/docker.png">
+            <img style="height: 150px; width: auto;" src="assets/images/kubernetes-logo.png">
+            <img style="height: 150px; width: auto;" src="assets/images/Jenkins_logo.svg.png">
         </div>
         <p-tabView>
             <p-tabPanel header="Docker">
                 <p>
-                <strong>Nível Júnior</strong><br>
-                    Com alguns meses de experiência utilizando Docker, posso oferecer uma integração com os serviços de containerização esperadas de um desenvolvedor e aplicar práticas de infrastructure as code.
+                    <strong>Nível Júnior</strong><br> Com alguns meses de experiência utilizando Docker, posso oferecer uma integração com os serviços de containerização esperadas de um desenvolvedor e aplicar práticas de infrastructure as code.
                 </p>
             </p-tabPanel>
             <p-tabPanel header="Kubernetes">
                 <p>
-                    <strong>Nível Júnior</strong><br>
-                    Com alguns meses de experiência utilizando Kubernetes, posso oferecer um baixo nível de orquestração de containeres e aplicar práticas de infrastructure as code.
+                    <strong>Nível Júnior</strong><br> Com alguns meses de experiência utilizando Kubernetes, posso oferecer um baixo nível de orquestração de containeres e aplicar práticas de infrastructure as code.
                 </p>
             </p-tabPanel>
             <p-tabPanel header="Jenkins">
                 <p>
-                    <strong>Nível Júnior</strong><br>
-                    Com alguns meses de experiência utilizando Jenkins, posso oferecer um baixo nível de automação de deploys e aplicar práticas de infrastructure as code.
+                    <strong>Nível Júnior</strong><br> Com alguns meses de experiência utilizando Jenkins, posso oferecer um baixo nível de automação de deploys e aplicar práticas de infrastructure as code.
                 </p>
             </p-tabPanel>
         </p-tabView>
