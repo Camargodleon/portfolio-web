@@ -8,6 +8,7 @@ import { TecnologiaComponent } from "./tecnologia/tecnologia.component";
 
 export const routes:Routes = [
     {path: 'home', component: LandingComponent},
+    {path: '', component: LandingComponent},
     {path: 'tecnologia', component: TecnologiaComponent},
     {path: 'servicos', component: ServicoComponent},
     {path: 'contato', component: ContatoComponent},
