@@ -2,7 +2,7 @@
     <div style="padding-left: 7%; padding-top: 7%;" class="row">
         <div class="col col-md-4">
             <p-card header="Front-end" [style]="{width: '360px'}" styleClass="p-card-shadow">
-                <img style="height: auto; width: 320px; padding-bottom: 10%;" alt="Card" src="assets/images/front-end.jpg">
+                <img style="height: auto; width: 320px; padding-bottom: 10%;" alt="Card" src="front-end.jpg">
                 <p>Tecnologias que constroem interfaces de usuário intuitivas, simples e agradáveis. Como desenvolvedor fullstack, disponho de um arsenal que facilita o desenvolvimento destas interfaces de uma maneira rápida, compreensível e acessível.</p>
                 <ng-template pTemplate="footer">
                     <a (click)="displayFrontDialog=true" class="saiba-mais">Saiba mais <i class="fa fa-arrow-right"></i></a>
@@ -12,7 +12,7 @@
 
         <div class="col col-md-3">
             <p-card header="Back-end" [style]="{width: '360px'}" styleClass="p-card-shadow">
-                <img style="height: auto; width: 320px; padding-bottom: 3%;" alt="Card" src="assets/images/backend.png">
+                <img style="height: auto; width: 320px; padding-bottom: 3%;" alt="Card" src="backend.png">
                 <p>Como desenvolvedor backend estou preparado para entregar serviços eficientes, leves e de fácil manutenção. Fazendo uso de tecnologias apropriadas para cada cenário, meu estilo é orientado por <strong>organização</strong>, <strong>solidez</strong>                    e <strong>adaptabilidade</strong></p>
                 <ng-template pTemplate="footer">
                     <a (click)="displayBackDialog=true" class="saiba-mais">Saiba mais <i class="fa fa-arrow-right"></i></a>
@@ -24,7 +24,7 @@
         <div class="col col-md-2"></div>
         <div class="col col-md-2">
             <p-card header="DevOps e Outros Recursos" [style]="{width: '360px'}" styleClass="p-card-shadow">
-                <img style="height: auto; width: 320px; padding-bottom: 3%;" alt="Card" src="assets/images/other.jpg">
+                <img style="height: auto; width: 320px; padding-bottom: 3%;" alt="Card" src="other.jpg">
                 <p>Estou sempre preparado para atacar todas as frontes necessárias, buscando por tecnologias que permitam aos artifatos produzidos serem entregues de forma leve, confiável e dinâmica.</p>
                 <ng-template pTemplate="footer">
                     <a (click)="displayOtherDialog=true" class="saiba-mais">Saiba mais <i class="fa fa-arrow-right"></i></a>
@@ -40,8 +40,8 @@
     <p-dialog [(visible)]="displayFrontDialog" [style]="{width: '100vw'}" [baseZIndex]="10000">
 
         <div class="row">
-            <img style="height: 150px; width: auto;" src="assets/images/Angular_full_color_logo.svg.png">
-            <img style="height: 150px; width: auto;" src="assets/images/1280px-React-icon.svg.png">
+            <img style="height: 150px; width: auto;" src="Angular_full_color_logo.svg.png">
+            <img style="height: 150px; width: auto;" src="1280px-React-icon.svg.png">
         </div>
         <p-tabView>
             <p-tabPanel header="Angular">
@@ -64,9 +64,9 @@
     <p-dialog [(visible)]="displayBackDialog" [style]="{width: '100vw'}" [baseZIndex]="10000">
 
         <div class="row">
-            <img style="height: 150px; width: auto;" src="assets/images/java-logo.png">
-            <img style="height: 150px; width: auto;" src="assets/images/Spring_Framework_Logo_2018.svg.png">
-            <img style="height: 150px; width: auto;" src="assets/images/c-sharp-logo.png">
+            <img style="height: 150px; width: auto;" src="java-logo.png">
+            <img style="height: 150px; width: auto;" src="Spring_Framework_Logo_2018.svg.png">
+            <img style="height: 150px; width: auto;" src="c-sharp-logo.png">
         </div>
         <p-tabView>
             <p-tabPanel header="Java Core">
@@ -96,9 +96,9 @@
     <p-dialog [(visible)]="displayOtherDialog" [style]="{width: '100vw'}" [baseZIndex]="10000">
 
         <div class="row">
-            <img style="height: 150px; width: auto;" src="assets/images/docker.png">
-            <img style="height: 150px; width: auto;" src="assets/images/kubernetes-logo.png">
-            <img style="height: 150px; width: auto;" src="assets/images/Jenkins_logo.svg.png">
+            <img style="height: 150px; width: auto;" src="docker.png">
+            <img style="height: 150px; width: auto;" src="kubernetes-logo.png">
+            <img style="height: 150px; width: auto;" src="Jenkins_logo.svg.png">
         </div>
         <p-tabView>
             <p-tabPanel header="Docker">
