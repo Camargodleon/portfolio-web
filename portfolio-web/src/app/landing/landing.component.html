@@ -1,20 +1,16 @@
-<div class="main-banner">
-    <div class="main-heading">
-        <span class="heading">
-            {{heading}}
-        </span>
-        <span class="sub-heading">
-            <em>{{subHeading}}</em>
-        </span>
+<app-navbar>
+    <div class="main-banner p-d-flex p-flex-row">
+        <div class="main-heading p-mr-2">
+            <span class="heading">
+                {{heading}}
+            </span>
+            <i id="icon" style="float: right; font-size: 28rem; margin-top: -11%;" class="fa fa-code p-mb-2 p-mr-2" aria-hidden="true"></i>
+            <span class="sub-heading p-mb-2 p-mr-2">
+                <em>{{subHeading}}</em>
+            </span>
+            <button [routerLink]="['/servicos']" id="botaoFreela" pButton pRipple type="button" label="{{btnFreela}}" class="p-button-outlined p-button-help p-mb-2 p-mr-2"></button>
+            <button [routerLink]="['/tecnologia']" id="botaoAnalista" pButton pRipple type="button" label="{{btnAnalist}}" class="p-button-outlined p-button-help p-mb-2 p-mr-2"></button>
 
-        <div class="socials">
         </div>
-        <div>        
-            <button [routerLink]="['/servicos']" id="botaoFreela" pButton pRipple type="button" label="{{btnFreela}}" class="p-button-outlined p-button-help"></button>
-            <button [routerLink]="['/tecnologia']" id="botaoAnalista" pButton pRipple type="button" label="{{btnAnalist}}" class="p-button-outlined p-button-help"></button>
-            <i style="float: right; padding-right: 22%; font-size: 28rem; margin-top: -11%;" class="fa fa-code" aria-hidden="true"></i>
-        </div>
-        
     </div>
-    <app-sidebar></app-sidebar>
-</div>  
+</app-navbar>
